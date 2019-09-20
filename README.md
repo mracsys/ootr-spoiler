@@ -1,8 +1,14 @@
 # ootr-spoiler
 OoTR Spoiler Parser
 
+## Requirements
+
 Requires Python 3.x
+
 Only works with v5.0 spoiler files
+
+## Usage
+
 Run with the command:
 
 `python.exe ffroute.py <spoiler_file.json>`
