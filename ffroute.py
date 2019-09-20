@@ -125,7 +125,7 @@ def invertSpoiler(f):
                     if i['item'].split(" ")[0] == 'Bombchus':
                         if not ('Bombchus' in c):
                             c['Bombchus'] = []
-                        c['Bombchus'].append(l + ', ' + str(i['price']) + ' Rupees')
+                        c['Bombchus'].append(i['item'].split(" ")[1] + " " + l + ', ' + str(i['price']) + ' Rupees')
             else:
                 if not (i in c):
                     c[i] = []
@@ -137,7 +137,7 @@ def invertSpoiler(f):
                 if i.split(" ")[0] == 'Bombchus':
                     if not ('Bombchus' in c):
                         c['Bombchus'] = []
-                    c['Bombchus'].append(l)
+                    c['Bombchus'].append(i.split(" ")[1] + " " + l)
     return c
 
 def organizeChecks(c):
